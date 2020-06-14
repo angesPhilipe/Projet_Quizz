@@ -1,0 +1,38 @@
+.bg-colorA{
+    background-color: #51bfd0;
+}
+.bg-colorA-opac15{
+    background-color: #51bfd0;
+    opacity: 15%;
+}
+.bg-colorB{
+    background-color: #042425;
+}
+.bg-colorC{
+    background-color: #3addd6;
+}
+.bg-colorD{
+    background-color: #f2f2f2;
+}
+.colorE{
+    color: #8d8070;
+}
+.bg-colorE{
+    background-color: #f8f3f0;
+}
+.checkboxLineStyle{
+    cursor: pointer;
+    font-size: 10px;
+    margin: 0px;
+    list-style-type: disc;
+    display: block;
+}
+.boxStyle{
+    cursor:pointer;
+    display:block;
+    list-style-type:disc;
+    position:relative;
+    width:10px;
+    display: inline;
+    float: left;
+}
