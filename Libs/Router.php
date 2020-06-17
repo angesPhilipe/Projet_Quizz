@@ -33,6 +33,7 @@ class Router{
                           unset($url[1]);
                           unset($url[2]);
                     }else{
+                        //La page erreur 404 doit etre ecritre dans la fonction Error
                         require_once "controllers/Errors.php";
                         $this->ctrl=new Errors();
                         $this->ctrl->showError("Cette Methode n'existe pas"); 

@@ -36,16 +36,16 @@
 
                     <div class="position-relative container p-0 w-100 m-auto col-3 rounded shadow bg-white" style="height: 55%;">
                         <div class="container w-100 bg-dark rounded-top d-flex align-items-center justify-content-center" style="height: 50%; background: linear-gradient(0deg, rgba(81,191,208,1) 0%, rgba(255,255,255,1) 100%);">
-                            <div class="container bg-dark rounded-circle m-2" style="height: 120px; width: 120px; border: solid 3px #51bfd0;">
-
-                            </div>
-                            <h4 class="font-weight-bold text-white m-0 p-0">Nom USER</h4>
+                            <!--<div class="container bg-dark rounded-circle m-2" style="height: 120px; width: 120px; border: solid 3px #51bfd0; background: url();">-->
+                                <img src="<?=WEBROOT?>assets/images/upload/<?=$_SESSION['userConnect']->getAvatar()?>" class="rounded-circle border-dark m-2" style="height:107px; width:107px; margin-left: 10px;margin-top: 58px;">
+                            <!--</div>-->
+                            <h4 class="font-weight-bold text-white m-0 p-0"><?=$_SESSION['userConnect']->getFullName()?></h4>
                         </div>
                         <div class="nav flex-column nav-pills m-auto" role="tablist" aria-orientation="vertical">
-                            <a class="nav-link rounded-0 color5" href="<?=WEBROOT?>security/loadViewAdmin1" role="tab" style="height: 10%;">Lister Questions</a>
+                            <a class="nav-link rounded-0 color5" href="<?=WEBROOT?>admin/listeQuestion" role="tab" style="height: 10%;">Lister Questions</a>
                             <a class="nav-link rounded-0 color5" href="<?=WEBROOT?>security/creerAdmin" role="tab" style="height: 10%;">Créer Admin</a>
-                            <a class="nav-link rounded-0 color5" href="<?=WEBROOT?>security/loadViewAdmin3" role="tab" aria-selected="false" style="height: 10%;">Lister Joueurs</a>
-                            <a class="nav-link rounded-0 color5" href="<?=WEBROOT?>security/loadViewAdmin4" role="tab" style="height: 10%;">Créer Questions</a>
+                            <a class="nav-link rounded-0 color5" href="<?=WEBROOT?>admin/listeJoueur" role="tab" aria-selected="false" style="height: 10%;">Lister Joueurs</a>
+                            <a class="nav-link rounded-0 color5" href="<?=WEBROOT?>admin/creerQuestion" role="tab" style="height: 10%;">Créer Questions</a>
                         </div>
                     </div>
 

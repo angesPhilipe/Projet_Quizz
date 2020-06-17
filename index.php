@@ -1,6 +1,6 @@
 <?php
 
-define("WEBROOT","http://localhost/PHP/Projet Quizz/");
+define("WEBROOT","http://localhost/PHP/Projet_Quizz-master/Projet Quizz/");
 
    require_once "libs/Router.php";
    $router=new Router();

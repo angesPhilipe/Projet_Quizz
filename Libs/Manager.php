@@ -5,7 +5,7 @@
        private  $pdo=null;
        //Classe d'encapsulation des données récuperer lors d'une requete Select 
        protected $className;
-   
+    
       private   function getConnexion(){
         try{
            //Scenerio nominal
@@ -45,7 +45,7 @@
          $this->getConnexion();
          //$nbreLigne represente le nombre de ligne modifiée par la requete
           $nbreLigne = $this->pdo->exec($sql);
-       $this->closeConnexion();
+       $this->CloseConnexion();
       return  $nbreLigne;
 
     }

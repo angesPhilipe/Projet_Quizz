@@ -52,7 +52,7 @@ public function compare($nbre1,$nbre2,$key1,$key2,$errorMessage="Longueur doit s
 public function  is_empty($nbre,$key,$sms=null){
     if(empty($nbre)){
         if($sms==null){
-            $sms="Le Nombre  est Obligatoire";
+            $sms="Ce champ est Obligatoire";
         }
         $this->errors[$key]= $sms;
 
@@ -68,7 +68,11 @@ public function  is_empty($nbre,$key,$sms=null){
     
     }
 
-
+    public function isEqual($nbre1,$nbre2,$key,$sms="Les Valeurs entrées ne sont pas les memes"){
+        if($nbre1!=$nbre2){
+            $this->errors[$key]=$sms;
+        }
+    }
 
 
 
